@@ -1,0 +1,7 @@
+print("*" * 40)
+print("Nombre: Carlos Andres.")
+print("Carrera: Ingenieria Industrial.")
+print("Trabajo: Operador de Robot Remoto.")
+print("Residencia: Toluca, Mexico.")
+print("En 24 semanas sere programador.")
+print("*" * 40)
