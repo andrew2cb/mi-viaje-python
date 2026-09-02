@@ -1,8 +1,9 @@
-cuenta = 25.50
+cuenta = float(input("¿De cuanto fue la cuenta? "))
 porcentaje = 0.15
 propina = round(cuenta * porcentaje, 2)
 total = round(cuenta + propina, 2)
 
-print("Cuenta", cuenta)
-print("Propina", propina)
-print("Total", total)
+print(f"La cuenta total seria: {total} ")
+
+
+
