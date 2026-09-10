@@ -5,19 +5,21 @@
     #contador = contador + 1
 import random
 
-secreto = random.randint(1, 101)
-intentos = 0 # 1. Creamos el contador en cero antes del while
+secreto = random.randint(1, 100)
+intentos = 0 
+adivina = 0 # 1. Crear una variable para almacenar la adivinanza del usuario
 
-while secreto != 0:
+# 2. El while loop continuará hasta que el usuario adivine el número secreto
+while adivina != secreto:
     adivina = int(input("Adivina el número secreto (1-100): "))
-    intentos += 1 # 2. Sumamos 1 en cada intento por cada vuelta del while
+    intentos += 1 
     if adivina < secreto:
         print("Muy bajo, intenta mas alto.")
     elif adivina > secreto:
         print("Muy alto, intenta mas bajo.")
     else:
         print(f"¡Felicidades! Ganaste en {intentos} intentos.")
-        break
+    # 3. Ya no es necesario el break, ya que el while loop se detendrá automáticamente cuando adivina sea igual a secreto.
 
 
 
